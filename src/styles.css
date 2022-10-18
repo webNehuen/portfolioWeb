@@ -1,1 +1,306 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Header Start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: #222329;
+    position: sticky;
+    top: 0;
+    left: 0;
+} 
+
+.logo{
+    width: 180px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    transition: 0.3s ease;
+}
+
+#navbar li a span{
+    margin-left: 10px;
+}
+
+#navbar li a:hover{
+    color: #000000;
+}
+
+#navbar li i{
+    font-size: 20px;
+}
+
+#login{
+    padding: 10px 15px;
+}
+
+/* Banner*/
+#banner{
+    background-image: url("assets/img/banner.jpg");
+    height: 50vh;
+    background-position: top 100% right 0;
+ }
+
+
+/* Acerca de*/
+#acerca-de{
+    display: flex;
+    justify-content: space-between;
+    margin: -8% 5% 0 5%;
+} 
+
+#perfil img {
+    height: 30vh;
+    border-radius: 50%;
+}
+
+#perfil h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20pt; 
+}
+
+#perfil h6{
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12pt;
+    color: red;
+}
+
+#present{
+    margin-top: 12%;
+    width: 60%;
+}
+
+#present h5{
+    color: grey;
+    font-size: 12pt;
+    text-align: justify;
+    margin: 0;
+}
+
+#datos{
+    margin-top: 12%;
+}
+
+#datos p{
+    margin: 0;
+    font-size: 10pt;
+}
+
+#datos .titulo{
+    margin-bottom: 10px;
+}
+
+/* Experiencia */
+.exp-container{
+    background-color: beige;
+    padding: 5% 0 0 5%;
+}
+
+.exp-container h1{
+    
+    font-size: 20pt;
+}
+
+.experiencia{
+    display: flex;
+    margin: 5% 0 0 5%;
+}
+
+.titulo p{
+    margin: 8px 0 0 0;
+    font-size: 10pt;
+}
+
+.exp-logo, .edu-logo{
+    width: 10vw;
+    text-align: center;
+}
+
+.exp-logo img{
+    height: 5vh;
+}
+
+/* Educacion */
+.edu-logo img{
+    height: 10vh;
+}
+
+/* Skills */
+#hab-container h1{
+    margin-bottom: 5%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 10%;
+    width: 60vw;
+}
+
+#skills1{
+    margin-bottom: 5%;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                        -0.5px -0.5px 0px rgba(255,255,255,1),
+                        0.5px 0.5px 0px rgba(0,0,0,0.15),
+                        0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+.inner p{
+    color: midnightblue;
+    font-weight: 700;
+}
+
+#number{
+    font-weight: 600;
+    color: #555;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sql{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim 2.6s linear forwards;
+}
+
+#java{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim2 2.4s linear forwards;
+}
+
+
+#php{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim3 1.5s linear forwards;
+}
+
+#javaScript{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim4 2.2s linear forwards;
+}
+
+#html{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim5 3.1s linear forwards;
+}
+
+#css{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim6 2.8s linear forwards;
+}
+
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 66;
+    }
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 220;
+    }
+}
+
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 132;
+    }
+}
+
+@keyframes anim5{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes anim6{
+    100%{
+        stroke-dashoffset: 44;
+    }
+}
+
+/* Proyectos */
+#proyecto{
+    padding-bottom: 5%;
+}

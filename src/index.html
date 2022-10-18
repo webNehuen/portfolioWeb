@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,8 +6,82 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/df530cb309.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script>
+    let numberSQL = document.getElementById("numberSQL");
+    let counterSQL = 0;
+    setInterval(() =>{
+        if(counterSQL == 85){
+            clearInterval();
+        }else{
+            counterSQL += 1;
+            numberSQL.innerHTML = counterSQL + "%";
+        }
+    }, 30)
+
+    let numberJava = document.getElementById("numberJava");
+    let counterJava = 0;
+    setInterval(() =>{
+        if(counterJava == 75){
+            clearInterval();
+        }else{
+            counterJava += 1;
+            numberJava.innerHTML = counterJava + "%";
+        }
+    }, 30)
+
+    
+    let numberPHP = document.getElementById("numberPHP");
+    let counterPHP = 0;
+    setInterval(() =>{
+        if(counterPHP == 50){
+            clearInterval();
+        }else{
+            counterPHP += 1;
+            numberPHP.innerHTML = counterPHP + "%";
+        }
+    }, 30)
+    
+    let numberJavaScript = document.getElementById("numberJavaScript");
+    let counterJavaScript = 0;
+    setInterval(() =>{
+        if(counterJavaScript == 70){
+            clearInterval();
+        }else{
+            counterJavaScript += 1;
+            numberJavaScript.innerHTML = counterJavaScript + "%";
+        }
+    }, 30)
+
+    let numberCSS = document.getElementById("numberCSS");
+    let counterCSS = 0;
+    setInterval(() =>{
+        if(counterCSS == 90){
+            clearInterval();
+        }else{
+            counterCSS += 1;
+            numberCSS.innerHTML = counterCSS + "%";
+        }
+    }, 30)
+
+    let numberHTML = document.getElementById("numberHTML");
+    let counterHTML = 0;
+    setInterval(() =>{
+        if(counterHTML == 100){
+            clearInterval();
+        }else{
+            counterHTML += 1;
+            numberHTML.innerHTML = counterHTML + "%";
+        }
+    }, 30)
+  </script>
 </body>
 </html>
