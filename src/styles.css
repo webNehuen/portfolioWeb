@@ -56,7 +56,7 @@
 
 /* Banner*/
 #banner{
-    background-image: url("assets/img/banner.jpg");
+    background-image: url("./assets/img/banner.jpg");
     height: 50vh;
     background-position: top 100% right 0;
  }
